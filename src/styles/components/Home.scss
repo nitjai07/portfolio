@@ -4,22 +4,77 @@
     display: inline-block;
     vertical-align: top;
     >p {
-      color: #8d8d8d;
+      color: $secondaryColor2;
     }
     >h1 {
-      color: #fff;
+      color: $tertiaryColor1;
     }
   }
   &__rightsec {
-    width: 38%;
+    width: 45%;
     position: fixed;
-    top: 5%;
+    display: inline-block;
+    top: 15%;
     right: 5%;
     height: 90%;
-    text-align: center;
-    >img {
-      height: 100%;
-      filter: grayscale(100%);
+    .box {
+      display: flex;
+    }
+    
+    .box .inner {
+      width: 400px;
+      height: 200px;
+      line-height: 200px;
+      font-size: 4em;
+      // font-family: sans-serif;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    
+    .box .inner:first-child {
+      background-color: $primaryColor1;
+      color: $tertiaryColor3;
+      transform-origin: right;
+      transform: perspective(100px) rotateY(-15deg);
+    }
+    
+    .box .inner:last-child {
+      background-color: $primaryColor3;
+      color: $tertiaryColor1;
+      transform-origin: left;
+      transform: perspective(100px) rotateY(15deg);
+    }
+    
+    .box .inner span {
+      position: absolute;
+      animation: marquee 5s linear infinite;
+    }
+    
+    .box .inner:first-child span {
+      animation-delay: 2.5s;
+      left: -100%;
+    }
+    .scrollHead {
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      font-size: 40px;
+      width: 100%;
+      position: absolute;
+      // overflow: hidden;
+      margin-left: -15px;
+      color: transparent;
+      text-shadow: 7px 3px 0px $primaryColor1, 5px 5px 5px $primaryColor2;
+      font-weight: 400;
+      transform: skewX(0deg);
+      animation: shift 4s ease-in-out infinite alternate;
+      padding-left: 20px;
+      bottom: 20px;
+      svg {
+        animation: floatVertical 2s linear 0s infinite;
+        color: $primaryColor1;
+        vertical-align: middle;
+      }
     }
   }
 }

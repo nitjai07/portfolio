@@ -14,9 +14,9 @@
       text-decoration: none;
       display: inline-block;
       box-sizing: border-box;
-      color: #fff;
+      color: $tertiaryColor1;
       &:hover {
-        -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+        -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, $tertiaryColor3 50%, rgba(0,0,0,.6) 70%);
         -webkit-mask-size: 200%;
         animation: shine 2s infinite;
         &:after {
@@ -28,7 +28,7 @@
         content: "";
         height: 5px;
         width: 100%;
-        background: #08fdd8;
+        background: $primaryColor1;
         display: block;
         transform: scaleX(0) translateY(-2px);
         transform-origin: 50%;
@@ -37,14 +37,14 @@
       }
       >span {
         box-sizing: border-box;
-        color: #8d8d8d;
+        color: $secondaryColor2;
         &:first-of-type {
           font-size: 40px;
           margin-right: 15px;
           display: inline-block;
           font-weight: 800;
           font-family: 'Montserrat', sans-serif;
-          color: #08fdd8;
+          color: $primaryColor1;
         }
       }
     }
@@ -78,7 +78,7 @@
 .projectBrief {
   position: fixed;
   bottom: 0;
-  background: #fff;
+  background: $tertiaryColor1;
   width: 95%;
   right: 0;
   padding: 10px;
