@@ -1,0 +1,20 @@
+.primary-btn {
+  color: #08fdd8;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid #08fdd8;
+  margin-top: 25px;
+  border-radius: 3px;
+  display: inline-block;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  background: none;
+  cursor: pointer;
+  &:hover {
+    background: #08fdd8;
+    color: #000;
+  }
+}

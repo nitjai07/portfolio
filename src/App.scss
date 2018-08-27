@@ -1,0 +1,25 @@
+@import './styles/styles.scss';
+
+.maincontent {
+  padding-left: 10%;
+  padding-top: 10%;
+  &:before {
+    content: '<body>';
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -5%;
+    font-style: italic;
+  }
+  &:after {
+    @extend :before;
+    content: '</body>';
+    margin-top: 5%;
+  }
+}
+
+.initial-shadow {
+  color: #1be0fd;
+  text-underline-position: auto;
+  text-shadow: -3px 2px orangered
+}

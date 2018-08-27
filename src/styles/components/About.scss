@@ -1,0 +1,26 @@
+.aboutwrapper {
+  &__content {
+    width: 80%;
+  }
+  &__leftsec {
+    width: 55%;
+    display: inline-block;
+    vertical-align: top;
+    >p {
+      width: 80%;
+      color: #8d8d8d;
+    }    
+  }
+  &__rightsec {
+    width: 38%;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    height: 90%;
+    text-align: center;
+    >img {
+      height: 100%;
+      filter: grayscale(100%);
+    }
+  }
+}

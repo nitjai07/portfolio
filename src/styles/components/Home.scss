@@ -1,0 +1,25 @@
+.homewrap {
+  &__leftsec {
+    width: 55%;
+    display: inline-block;
+    vertical-align: top;
+    >p {
+      color: #8d8d8d;
+    }
+    >h1 {
+      color: #fff;
+    }
+  }
+  &__rightsec {
+    width: 38%;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    height: 90%;
+    text-align: center;
+    >img {
+      height: 100%;
+      filter: grayscale(100%);
+    }
+  }
+}

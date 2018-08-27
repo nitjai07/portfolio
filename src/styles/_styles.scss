@@ -1,0 +1,21 @@
+/* ========utilities====== */
+@import 'fonts.scss';
+@import 'color-palette.scss';
+
+/* ====== Page Styling ====== */
+
+/* ========components====== */
+@import 'components/Home.scss';
+@import 'components/SideNav.scss';
+@import 'components/About.scss';
+@import 'components/Skills.scss';
+@import 'components/Contact.scss';
+@import 'components/MyProjects.scss';
+
+/* ========common components====== */
+@import 'common/Heading.scss';
+@import 'common/ProjectDetails.scss';
+
+/* ====== common miscellaneous ====== */
+@import 'base.scss';
+@import 'buttons.scss';
