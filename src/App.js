@@ -9,7 +9,9 @@ import {
   faBriefcase,
   faArrowLeft,
   faArrowRight,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faLongArrowAltDown,
+  faArrowDown
 } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import axios from 'axios';
@@ -41,7 +43,9 @@ library.add(
   faBriefcase,
   faArrowLeft,
   faArrowRight,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faLongArrowAltDown,
+  faArrowDown
 );
 
 class App extends Component {

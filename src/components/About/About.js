@@ -5,9 +5,11 @@ import PropTypes from 'prop-types';
 
 import Heading from '../Common/Heading/Heading';
 import Typewriter from '../Common/Typewriter/Typewriter';
+import ProgressiveImage from '../Common/ProgressiveImage/ProgressiveImage';
 
 // import { expressStaticUrl } from '../../utils/staticSideNavData';
 import meImg from '../../assets/images/me_1.jpg';
+import meImgLow from '../../assets/images/me_1_low.jpg';
 
 class About extends Component {
   componentDidMount() {
@@ -46,7 +48,6 @@ class About extends Component {
               after i completed my training in web technologies. After working for 3 years there, i realized i need more
               exposure to different technologies and need career growth so i switched to Deloitte USI.
               <br /> <br /> When i am not coding, you will find me either traveling or playing different sports.
-              Sometimes i like to sing and dance too. But believe me you dont want to see me doing that.
               <br /> <br />
               <Typewriter
                 typeTxt="Some of the clients I have worked for include: Delta Airlines, Realogy Holdings Corp., XG
@@ -57,7 +58,13 @@ class About extends Component {
           </div>
           <div className="aboutwrapper__rightsec">
             {/* <img src={`${expressStaticUrl.url}me_1.f4ed6f65.jpg`} alt="" /> */}
-            <img src={meImg} alt="" />
+            <ProgressiveImage
+              piTinyImageSource={meImgLow}
+              piMainImageSource={meImg}
+              piAlt="Nitish Jain"
+              piFilterEffect="blur(5px) grayscale(100%)"
+              piWidth="auto"
+            />
           </div>
         </div>
       </ReactCSSTransitionGroup>

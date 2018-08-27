@@ -5,7 +5,7 @@
   padding-top: 10%;
   &:before {
     content: '<body>';
-    color: #515152;
+    color: $primaryColor3;
     font-size: 18px;
     position: absolute;
     margin-top: -5%;
@@ -19,7 +19,7 @@
 }
 
 .initial-shadow {
-  color: #1be0fd;
+  color: $primaryColor1;
   text-underline-position: auto;
-  text-shadow: -3px 2px orangered
+  text-shadow: -3px 2px $primaryColor2;
 }
