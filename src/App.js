@@ -13,7 +13,17 @@ import {
   faLongArrowAltDown,
   faArrowDown
 } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import {
+  faFacebook,
+  faLinkedin,
+  faInstagram,
+  faReact,
+  faAngular,
+  faSass,
+  faNode,
+  faHtml5,
+  faAccessibleIcon
+} from '@fortawesome/free-brands-svg-icons';
 import axios from 'axios';
 
 import SideNav from './components/SideNav/SideNav';
@@ -45,7 +55,13 @@ library.add(
   faArrowRight,
   faExternalLinkAlt,
   faLongArrowAltDown,
-  faArrowDown
+  faArrowDown,
+  faReact,
+  faAngular,
+  faSass,
+  faNode,
+  faAccessibleIcon,
+  faHtml5
 );
 
 class App extends Component {
