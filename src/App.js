@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, HashRouter } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faHome,
@@ -82,7 +82,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <div className="App">
           <SideNav firstName={this.state.myData.firstname} />
           <main className="maincontent">
@@ -106,7 +106,7 @@ class App extends Component {
             </Switch>
           </main>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }

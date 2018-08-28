@@ -6,6 +6,12 @@
   z-index: 1;
   background: $secondaryColor1;
   height: 100%;
+  @include mqueryipad(768px, 1024px) {
+    width: 8%;
+  }
+  @include mqueryphone(320px, 767px) {
+		width: 12%;
+	}
   &__logo {
     width: 100%;
     text-align: center;

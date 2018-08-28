@@ -3,6 +3,9 @@
 .maincontent {
   padding-left: 10%;
   padding-top: 10%;
+  @include mqueryphone(320px, 767px) {
+		padding-left: 15%;
+	}
   &:before {
     content: '<body>';
     color: $primaryColor3;

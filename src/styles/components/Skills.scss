@@ -3,6 +3,9 @@
     display: inline-block;
     width: 45%;
     color: $secondaryColor2;
+    @include mqueryphone(320px, 767px) {
+      width: 95%;
+    }
   }
 }
 
@@ -33,6 +36,14 @@
   position: fixed;
   top: 40%;
   left: 70%;
+  @include mqueryipad(768px, 1024px) {
+    top: 30%;
+  }
+  @include mqueryphone(320px, 767px) {
+    bottom: 30%;
+    left: 37%;
+    top: auto;
+  }
 }
 
 .cubespinner {

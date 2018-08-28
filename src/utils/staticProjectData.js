@@ -1,29 +1,17 @@
 import digi1 from '../assets/images/digi_1.jpg';
 import digi2 from '../assets/images/digi_2.jpg';
-import digi3 from '../assets/images/digi_3.jpg';
-import digi4 from '../assets/images/digi_4.jpg';
 
 import dnd1 from '../assets/images/dnd_1.jpg';
 import dnd2 from '../assets/images/dnd_2.jpg';
-import dnd3 from '../assets/images/dnd_3.jpg';
-import dnd4 from '../assets/images/dnd_4.jpg';
-import dnd5 from '../assets/images/dnd_5.jpg';
 
 import da1 from '../assets/images/DA_1.jpg';
 
 import rcb1 from '../assets/images/realogy_cb_1.jpg';
 import rcb2 from '../assets/images/realogy_cb_2.jpg';
-import rcb3 from '../assets/images/realogy_cb_3.jpg';
-import rcb4 from '../assets/images/realogy_cb_4.jpg';
 
 import SD1 from '../assets/images/SD_1.jpg';
-import SD2 from '../assets/images/SD_2.jpg';
-import SD3 from '../assets/images/SD_3.jpg';
 
 import SS1 from '../assets/images/SS_1.jpg';
-import SS2 from '../assets/images/SS_2.jpg';
-import SS3 from '../assets/images/SS_3.jpg';
-import SS4 from '../assets/images/SS_4.jpg';
 
 export const ProjectData = {
   DnD: {
@@ -32,7 +20,7 @@ export const ProjectData = {
     client: 'Training MFRP',
     role: 'Front End Developer',
     date: 'April 2015',
-    images: [dnd1, dnd2, dnd3, dnd4, dnd5],
+    images: [dnd1, dnd2],
     tech: 'HTML5, CSS3, JavaScript'
   },
   DA: {
@@ -54,7 +42,7 @@ export const ProjectData = {
     websiteUrl: 'https://careers.coldwellbanker.com/',
     role: 'Front End Developer',
     date: 'Jan 2017 - Aug 2017',
-    images: [rcb1, rcb2, rcb3, rcb4],
+    images: [rcb1, rcb2],
     tech: 'HTML5, CSS, Bootstrap 3, JQuery, Angular JS'
   },
   DB: {
@@ -64,7 +52,7 @@ export const ProjectData = {
     client: 'Internal',
     role: 'Full Stack Developer',
     date: 'Jan 2018 - Feb 2018',
-    images: [digi1, digi2, digi3, digi4],
+    images: [digi1, digi2],
     tech: 'HTML5, SCSS, Angular 2, Node JS, Mongo DB'
   },
   SD: {
@@ -75,7 +63,7 @@ export const ProjectData = {
     // websiteUrl: '',
     role: 'Front End Developer',
     date: 'Feb 2018, Apr 2018',
-    images: [SD1, SD2, SD3],
+    images: [SD1],
     tech: 'HTML5, SCSS, Bootstrap, React'
   },
   SS: {
@@ -86,7 +74,7 @@ export const ProjectData = {
     websiteUrl: 'www.siteselex.com',
     role: 'Front End Developer',
     date: 'Oct 2017 - Aug 2018',
-    images: [SS1, SS2, SS3, SS4],
+    images: [SS1],
     tech: 'HTML5, SCSS, Angular 6, Angular Material'
   }
 };
