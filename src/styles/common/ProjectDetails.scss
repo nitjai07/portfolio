@@ -10,6 +10,9 @@
       -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, $tertiaryColor3 50%, rgba(0,0,0,.6) 70%);
       -webkit-mask-size: 200%;
       animation: shine 2s infinite;
+      @include mqueryphone(320px, 767px) {
+        margin-top: 30px;
+      }
       &:before, &:after {
         content: "",
       }    
@@ -34,6 +37,15 @@
       font-size: 30px;
       text-decoration: none;
       transition: all 1s;
+      z-index: 1;
+      @include mqueryipad(768px, 1024px) {
+        top: 5%;
+        left: 12%;
+      }
+      @include mqueryphone(320px, 767px) {
+        top: 3%;
+        left: 50%;
+      }
       svg {
         transition: all 1s;
         opacity: 1;
@@ -57,10 +69,16 @@
     &__moredetails {
       ul {
         width: 95%;
+        @include mqueryphone(320px, 767px) {
+          max-width: 85%;
+        }
         li {
           display: inline-block;
           list-style-type: none;
           width: 33%;
+          @include mqueryphone(320px, 767px) {
+            vertical-align: top;
+          }
           >p {
             color: $secondaryColor2;
             margin-top: 10px;
@@ -99,7 +117,15 @@
     >img {
       max-width: 100%;
       display: block;
-      margin: 0 auto 20px auto;
+      margin: 0 auto 100px auto;
+      animation: floatVertical 2s linear 0s infinite;
+      max-height: 500px;
+      &:first-of-type {
+        margin-top: 50px;
+      }
+      &:last-of-type {
+        margin-bottom: 100px;
+      }
     }
   }
 
@@ -128,6 +154,14 @@
       svg {
         vertical-align: middle;
         margin-left: 15px;
+      }
+    }
+    @include mqueryphone(320px, 767px) {
+      font-size: 14px;
+      >a {
+        &:first-of-type {
+          margin-right: 5%;
+        }
       }
     }
   }

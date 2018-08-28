@@ -14,6 +14,10 @@ class ProjectDetails extends Component {
     // changeImgStatus: false
   };
 
+  componentWillMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <ReactCSSTransitionGroup
@@ -56,7 +60,7 @@ class ProjectDetails extends Component {
             {this.props.projectData.websiteUrl && (
               <div className="projectwrapper__topsection__visitsite">
                 <a href={this.props.projectData.websiteUrl} className="primary-btn" target="_blank">
-                  <FontAwesomeIcon icon="external-link-alt" /> Visit The Website
+                  Visit The Website
                 </a>
               </div>
             )}

@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-// const Heading = props => <h1 className="commonheading" dangerouslySetInnerHTML={{ __html: props.headingText }} />;
 class Typewriter extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      // headText: this.props.typeTxt,
       ind: 0,
       speed: 70
     };

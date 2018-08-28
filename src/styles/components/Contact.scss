@@ -3,6 +3,9 @@
     width: 45%;
     display: inline-block;
     vertical-align: top;
+    @include mqueryphone(320px, 767px) {
+      width: 95%;
+    }
     &__form-group {
       display: inline-block;
       margin-right: 4%;
@@ -61,6 +64,12 @@
   width: 45%;
   right: 0;
   top: 0;
+  @include mqueryphone(320px, 767px) {
+    width: 95%;
+    display: inline-block;
+    position: static;
+    margin-top: 20px;
+  }
 }
 
 .mapOverText {

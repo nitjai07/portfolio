@@ -3,6 +3,12 @@
     width: 55%;
     display: inline-block;
     vertical-align: top;
+    @include mqueryipad(768px, 1024px) {
+      width: 95%;
+    }
+    @include mqueryphone(320px, 767px) {
+      width: 95%;
+    }
     >p {
       color: $secondaryColor2;
     }
@@ -14,18 +20,24 @@
     width: 45%;
     position: fixed;
     display: inline-block;
-    top: 15%;
+    top: 25%;
     right: 5%;
-    height: 90%;
+    height: 75%;
     .box {
       display: flex;
+      @include mqueryipad(768px, 1024px) {
+        display: none;
+      }
+      @include mqueryphone(320px, 767px) {
+        display: none;
+      }
     }
     
     .box .inner {
       width: 400px;
-      height: 200px;
-      line-height: 200px;
-      font-size: 4em;
+      height: 150px;
+      line-height: 150px;
+      font-size: 3em;
       // font-family: sans-serif;
       font-weight: bold;
       white-space: nowrap;
@@ -70,6 +82,9 @@
       animation: shift 4s ease-in-out infinite alternate;
       padding-left: 20px;
       bottom: 20px;
+      @include mqueryipad(768px, 1024px) {
+        bottom: 10%;
+      }
       svg {
         animation: floatVertical 2s linear 0s infinite;
         color: $primaryColor1;
