@@ -4,6 +4,7 @@ import { withRouter, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { expressStaticUrl } from '../../../utils/staticSideNavData';
 import Heading from '../Heading/Heading';
 // import Typewriter from '../Typewriter/Typewriter';
 // import mainImg from '../../../assets/images/digi_5.jpg';
@@ -67,7 +68,7 @@ class ProjectDetails extends Component {
           </div>
           <div className="projectwrapper__images">
             {this.props.projectData.images.map(image => (
-              <img key={image} src={image} alt="" />
+              <img key={image} src={`${expressStaticUrl.url}${image}`} alt="" />
             ))}
           </div>
           <div className="projectwrapper__next-prev-projects">
