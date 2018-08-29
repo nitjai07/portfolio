@@ -43,5 +43,5 @@ export const SideBarLinks = {
 };
 
 export const expressStaticUrl = {
-  url: 'http://localhost:3002/static/media/'
+  url: ''
 };

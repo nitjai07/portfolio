@@ -7,7 +7,7 @@ import Heading from '../Common/Heading/Heading';
 import Typewriter from '../Common/Typewriter/Typewriter';
 import ProgressiveImage from '../Common/ProgressiveImage/ProgressiveImage';
 
-// import { expressStaticUrl } from '../../utils/staticSideNavData';
+import { expressStaticUrl } from '../../utils/staticSideNavData';
 import meImg from '../../assets/images/me_1.jpg';
 import meImgLow from '../../assets/images/me_1_low.jpg';
 
@@ -59,8 +59,8 @@ class About extends Component {
           <div className="aboutwrapper__rightsec">
             {/* <img src={`${expressStaticUrl.url}me_1.f4ed6f65.jpg`} alt="" /> */}
             <ProgressiveImage
-              piTinyImageSource={meImgLow}
-              piMainImageSource={meImg}
+              piTinyImageSource={`${expressStaticUrl.url}${meImgLow}`}
+              piMainImageSource={`${expressStaticUrl.url}${meImg}`}
               piAlt="Nitish Jain"
               piFilterEffect="blur(5px) grayscale(100%)"
               piWidth="auto"

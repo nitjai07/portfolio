@@ -3,6 +3,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { withRouter, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
+import { expressStaticUrl } from '../../utils/staticSideNavData';
 import pMainImg from '../../assets/images/projects_main.jpg';
 import digi1 from '../../assets/images/digi_1.jpg';
 import SD1 from '../../assets/images/SD_1.jpg';
@@ -13,7 +14,7 @@ import dnd from '../../assets/images/dnd_1.jpg';
 
 class MyProjects extends Component {
   state = {
-    imageSrc: pMainImg,
+    imageSrc: expressStaticUrl.url + pMainImg,
     changeImgStatus: false
   };
 
@@ -36,7 +37,7 @@ class MyProjects extends Component {
     }
   };
 
-  changeImage = abc => {
+  changeImage = newImgSrc => {
     this.setState({
       changeImgStatus: true
     });
@@ -44,7 +45,7 @@ class MyProjects extends Component {
     this.changeImgTO = setTimeout(() => {
       this.setState({
         changeImgStatus: false,
-        imageSrc: abc
+        imageSrc: expressStaticUrl.url + newImgSrc
       });
     }, 500);
   };
