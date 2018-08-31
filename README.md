@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+Main implementations include:
+
+1. Progressive Image> you can check this in about page
+2. Snapshot test cases has been written
+3. Minification is done
+4. Project has been ejected to customize webpack configs for using SCSS
+5. It has been made responsive for mobile and ipad screens as well.
+
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 

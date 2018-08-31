@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading Component renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <h1
+    className="commonheading"
+    dangerouslySetInnerHTML={
+        Object {
+            "__html": "test heading",
+          }
+    }
+/>,
+  "nodes": Array [
+    <h1
+      className="commonheading"
+      dangerouslySetInnerHTML={
+            Object {
+                  "__html": "test heading",
+                }
+      }
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <Heading
+      headingText="test heading"
+/>,
+    "_forcedUpdate": false,
+    "_instance": null,
+    "_newState": null,
+    "_rendered": <h1
+      className="commonheading"
+      dangerouslySetInnerHTML={
+            Object {
+                  "__html": "test heading",
+                }
+      }
+/>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_callbacks": Array [],
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Heading
+    headingText="test heading"
+/>,
+}
+`;
