@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header component renders properly 1`] = `
+exports[`Home Component renders correctly 1`] = `
 ShallowWrapper {
   "complexSelector": ComplexSelector {
     "buildPredicate": [Function],
@@ -8,30 +8,24 @@ ShallowWrapper {
     "findWhereUnwrapped": [Function],
   },
   "length": 1,
-  "node": <header>
-    <p>
-        NJ Portfolio
-    </p>
-</header>,
+  "node": <Route>
+    [Function]
+</Route>,
   "nodes": Array [
-    <header>
-      <p>
-            NJ Portfolio
-      </p>
-</header>,
+    <Route>
+      [Function]
+</Route>,
   ],
   "options": Object {},
   "renderer": ReactShallowRenderer {
     "_context": Object {},
-    "_element": <Header />,
+    "_element": <withRouter(Home) />,
     "_forcedUpdate": false,
     "_instance": null,
     "_newState": null,
-    "_rendered": <header>
-      <p>
-            NJ Portfolio
-      </p>
-</header>,
+    "_rendered": <Route>
+      [Function]
+</Route>,
     "_rendering": false,
     "_updater": Updater {
       "_callbacks": Array [],
@@ -41,6 +35,6 @@ ShallowWrapper {
     "render": [Function],
   },
   "root": [Circular],
-  "unrendered": <Header />,
+  "unrendered": <withRouter(Home) />,
 }
 `;

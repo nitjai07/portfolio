@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, HashRouter } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faHome,
@@ -9,9 +9,21 @@ import {
   faBriefcase,
   faArrowLeft,
   faArrowRight,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faLongArrowAltDown,
+  faArrowDown
 } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import {
+  faFacebook,
+  faLinkedin,
+  faInstagram,
+  faReact,
+  faAngular,
+  faSass,
+  faNode,
+  faHtml5,
+  faAccessibleIcon
+} from '@fortawesome/free-brands-svg-icons';
 import axios from 'axios';
 
 import SideNav from './components/SideNav/SideNav';
@@ -41,7 +53,15 @@ library.add(
   faBriefcase,
   faArrowLeft,
   faArrowRight,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faLongArrowAltDown,
+  faArrowDown,
+  faReact,
+  faAngular,
+  faSass,
+  faNode,
+  faAccessibleIcon,
+  faHtml5
 );
 
 class App extends Component {
@@ -62,7 +82,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <div className="App">
           <SideNav firstName={this.state.myData.firstname} />
           <main className="maincontent">
@@ -86,7 +106,7 @@ class App extends Component {
             </Switch>
           </main>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }

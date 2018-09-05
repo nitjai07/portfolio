@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Heading from '../Common/Heading/Heading';
 import Typewriter from '../Common/Typewriter/Typewriter';
@@ -46,9 +47,20 @@ class Home extends Component {
               Contact Me
             </Link>
           </div>
-          {/* <div className="homewrap__rightsec">
-            <img src={meImg} alt="" />
-          </div> */}
+          <div className="homewrap__rightsec">
+            <div className="box">
+              <div className="inner">
+                <span>Hello World</span>
+              </div>
+              <div className="inner">
+                <span>Hello World</span>
+              </div>
+            </div>
+            <h2 className="scrollHead">
+              <FontAwesomeIcon icon="long-arrow-alt-down" />
+              Scroll Down
+            </h2>
+          </div>
         </div>
       </ReactCSSTransitionGroup>
     );

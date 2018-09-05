@@ -7,9 +7,12 @@
       margin-top: -20px;
       text-align: center;
       padding-top: 0;
-      -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+      -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, $tertiaryColor3 50%, rgba(0,0,0,.6) 70%);
       -webkit-mask-size: 200%;
       animation: shine 2s infinite;
+      @include mqueryphone(320px, 767px) {
+        margin-top: 30px;
+      }
       &:before, &:after {
         content: "",
       }    
@@ -19,9 +22,9 @@
       display: inline-block;
       width: 95%;
       text-align: center;
-      color: #fff;
+      color: $tertiaryColor1;
       font-size: 24px;
-      box-shadow: 10px 10px 10px #333;
+      box-shadow: 0px 0px 20px 5px $primaryColor3;
       padding: 20px;
       box-sizing: border-box;
     }
@@ -29,11 +32,20 @@
       position: fixed;
       top: 4%;
       left: 6%;
-      color: #fff;
+      color: $tertiaryColor1;
       animation: floatHorizontal 2s linear 0s infinite;
       font-size: 30px;
       text-decoration: none;
       transition: all 1s;
+      z-index: 1;
+      @include mqueryipad(768px, 1024px) {
+        top: 5%;
+        left: 12%;
+      }
+      @include mqueryphone(320px, 767px) {
+        top: 3%;
+        left: 50%;
+      }
       svg {
         transition: all 1s;
         opacity: 1;
@@ -57,16 +69,22 @@
     &__moredetails {
       ul {
         width: 95%;
+        @include mqueryphone(320px, 767px) {
+          max-width: 85%;
+        }
         li {
           display: inline-block;
           list-style-type: none;
           width: 33%;
+          @include mqueryphone(320px, 767px) {
+            vertical-align: top;
+          }
           >p {
-            color: #8d8d8d;
+            color: $secondaryColor2;
             margin-top: 10px;
           }
           >h3 {
-            color: #fff;
+            color: $tertiaryColor1;
             font-weight: 700;
             margin-bottom: 0;
             font-family: 'Montserrat', sans-serif;
@@ -82,12 +100,12 @@
         margin-bottom: 30px;
         &:hover {
           svg {
-            color: #000;
+            color: $tertiaryColor3;
           }
         }
         svg {
           font-size: 18px;
-          color: orangered;
+          color: $primaryColor2;
           margin-right: 5px;
         }
       }
@@ -99,7 +117,15 @@
     >img {
       max-width: 100%;
       display: block;
-      margin: 0 auto 20px auto;
+      margin: 0 auto 100px auto;
+      animation: floatVertical 2s linear 0s infinite;
+      max-height: 500px;
+      &:first-of-type {
+        margin-top: 50px;
+      }
+      &:last-of-type {
+        margin-bottom: 100px;
+      }
     }
   }
 
@@ -112,7 +138,7 @@
     padding: 20px;
     box-sizing: border-box;
     >a {
-      color: #fff;
+      color: $tertiaryColor1;
       text-decoration: none;
       &:first-of-type {
         margin-right: 10%;
@@ -128,6 +154,14 @@
       svg {
         vertical-align: middle;
         margin-left: 15px;
+      }
+    }
+    @include mqueryphone(320px, 767px) {
+      font-size: 14px;
+      >a {
+        &:first-of-type {
+          margin-right: 5%;
+        }
       }
     }
   }

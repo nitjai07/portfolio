@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typewriter Component renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <span
+    id="testId"
+/>,
+  "nodes": Array [
+    <span
+      id="testId"
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <Typewriter
+      idValue="testId"
+      typeTxt="test text"
+/>,
+    "_forcedUpdate": false,
+    "_instance": Typewriter {
+      "context": Object {},
+      "props": Object {
+        "idValue": "testId",
+        "typeTxt": "test text",
+      },
+      "refs": Object {},
+      "state": Object {
+        "ind": 0,
+        "speed": 70,
+      },
+      "typeWriter": [Function],
+      "updater": Updater {
+        "_callbacks": Array [],
+        "_renderer": [Circular],
+      },
+    },
+    "_newState": null,
+    "_rendered": <span
+      id="testId"
+/>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_callbacks": Array [],
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Typewriter
+    idValue="testId"
+    typeTxt="test text"
+/>,
+}
+`;

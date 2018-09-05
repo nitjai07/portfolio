@@ -4,22 +4,28 @@
   top: 0;
   left: 0;
   z-index: 1;
-  background: #181818;
+  background: $secondaryColor1;
   height: 100%;
+  @include mqueryipad(768px, 1024px) {
+    width: 8%;
+  }
+  @include mqueryphone(320px, 767px) {
+		width: 12%;
+	}
   &__logo {
     width: 100%;
     text-align: center;
     display: inline-block;
     text-decoration: none;
-    background: #000;
+    background: $tertiaryColor3;
     >span {
       display: block;
-      color: #fff;
+      color: $tertiaryColor1;
       margin-bottom: 20px;
       font-size: 12px;
       &.initial-shadow {
         font-size: 50px;
-        color: #1be0fd;
+        color: $primaryColor1;
         margin: 15px 0 0px 0;
         transition: transform 3s;
         &:hover {
@@ -34,7 +40,7 @@
     padding-bottom: 10px;
     &__link {
       display: block;
-      color: #4d4d4e;
+      color: $primaryColor3;
       margin-bottom: 10px;
       height: 50px;
       line-height: 50px;
@@ -43,14 +49,14 @@
         transition: height 1s;
       }
       &.active {
-        color: #08fdd8;
+        color: $primaryColor1;
       }
       &:hover {
         text-decoration: none;
         span {
           display: block;
           transform: rotate(360deg);
-          color: #08fdd8;
+          color: $primaryColor1;
           font-size: 14px;
         }
         svg {
@@ -68,10 +74,10 @@
     padding: 0px;
     text-align: center;
     >a {
-      color: #4d4d4e;
+      color: $primaryColor3;
       transition: color 0.5s;
       &:hover {
-        color: #08fdd8;
+        color: $primaryColor1;
       }
       li {
         list-style-type: none;
