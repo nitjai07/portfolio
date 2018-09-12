@@ -1,19 +1,20 @@
 const express = require('express');
 const path = require('path');
-const http = require('http');
 
 const app = express();
 
-const server = http.createServer(app);
-
-app.get('/', (req, res) => {
-  res.send(public);
+app.get('/', function(req, res){
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.use(express.static(path.resolve(__dirname, 'public')));
+// app.get('*.js', function (req, res, next) {
+//   req.url = req.url + '.gz';
+//   res.set('Content-Encoding', 'gzip');
+//   next();
+// });
 
-server.on('listening', () => {
-  console.log('Server is listening on port: 3000');
+app.use(express.static(path.resolve(__dirname, 'build')));
+
+app.listen(3003, () => {
+  console.log('server started');
 });
-
-server.listen(3002);
