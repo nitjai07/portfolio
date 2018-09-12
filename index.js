@@ -16,6 +16,6 @@ app.get('/', function(req, res){
 
 app.use(express.static(path.resolve(__dirname, 'build')));
 
-app.listen(PORT, () => {
+app.listen('/portfolio', () => {
   console.log('server started');
 });
