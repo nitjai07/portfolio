@@ -16,6 +16,6 @@ app.get('/', function(req, res){
 
 app.use(express.static(path.resolve(__dirname, 'build')));
 
-app.listen('/portfolio', () => {
+app.listen('nitjai07.github.io', () => {
   console.log('server started');
 });
